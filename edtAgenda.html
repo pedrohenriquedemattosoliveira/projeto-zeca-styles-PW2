@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Agendamento - Barbearia</title>
+    <link rel="stylesheet" href="edtAgenda.css">
+    <script src="JS/edtAgenda.js"></script>
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="back-button">
+                <img src="/api/placeholder/20/20" alt="Voltar">
+            </button>
+            <h1>Editar Agendamento</h1>
+        </div>
+        <div class="content">
+            <form class="edit-form">
+                <div class="form-section">
+                    <div class="section-title">
+                        <img src="/api/placeholder/20/20" alt="Cliente">
+                        Informações do Cliente
+                    </div>
+                    <div class="form-group">
+                        <label>Nome do Cliente</label>
+                        <input type="text" class="form-input" value="Antônio Nunes">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone</label>
+                        <input type="tel" class="form-input" value="(11) 99999-9999">
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="form-section">
+                    <div class="section-title">
+                        <img src="/api/placeholder/20/20" alt="Calendário">
+                        Data e Hora
+                    </div>
+                    <div class="time-inputs">
+                        <div class="form-group">
+                            <label>Data</label>
+                            <input type="date" class="form-input" value="2024-12-09">
+                        </div>
+                        <div class="form-group">
+                            <label>Horário</label>
+                            <input type="time" class="form-input" value="13:30">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="form-section">
+                    <div class="section-title">
+                        <img src="/api/placeholder/20/20" alt="Serviços">
+                        Serviços
+                    </div>
+                    <div class="services-grid">
+                        <div class="service-option selected">
+                            <div class="service-icon">
+                                <img src="/api/placeholder/24/24" alt="Corte">
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">Corte Masculino</div>
+                                <div class="service-duration">45 min • R$ 45,00</div>
+                            </div>
+                        </div>
+                        <div class="service-option">
+                            <div class="service-icon">
+                                <img src="/api/placeholder/24/24" alt="Barba">
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">Barba</div>
+                                <div class="service-duration">30 min • R$ 35,00</div>
+                            </div>
+                        </div>
+                        <div class="service-option">
+                            <div class="service-icon">
+                                <img src="/api/placeholder/24/24" alt="Sobrancelha">
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">Sobrancelha</div>
+                                <div class="service-duration">20 min • R$ 25,00</div>
+                            </div>
+                        </div>
+                        <div class="service-option">
+                            <div class="service-icon">
+                                <img src="/api/placeholder/24/24" alt="Completo">
+                            </div>
+                            <div class="service-info">
+                                <div class="service-name">Pacote Completo</div>
+                                <div class="service-duration">90 min • R$ 95,00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="form-section">
+                    <div class="section-title">
+                        <img src="/api/placeholder/20/20" alt="Status">
+                        Status do Agendamento
+                    </div>
+                    <div class="status-options">
+                        <div class="status-option">
+                            Em Espera
+                        </div>
+                        <div class="status-option selected">
+                            Confirmado
+                        </div>
+                        <div class="status-option">
+                            Concluído
+                        </div>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="form-section">
+                    <div class="section-title">
+                        <img src="/api/placeholder/20/20" alt="Notas">
+                        Observações
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="3" placeholder="Adicione observações sobre o agendamento..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">
+                        <img src="/api/placeholder/16/16" alt="Save">
+                        Salvar Alterações
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

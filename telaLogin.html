@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Login Barbearia</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Barbearia Style">
+           <!-- <div class="logo-icon">✂️</div> -->
+        </div>
+        <h1>Zeca Styles</h1>
+        <form id="loginForm" onsubmit="return validateForm(event)">
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" required>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+            <button type="submit">Entrar</button>
+            <div class="success-message" id="successMessage">Login realizado com sucesso!</div>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Esqueceu sua senha?</a>
+        </div>
+    </div>
+    <script src="JS/scritp.js"></script>
+</body>
+</html>
