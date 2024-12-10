@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styleProduto.css">
+    <title>Produtos da Barbearia</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Barbearia Style</div>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒 <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filters">
+            <div class="filter-buttons">
+                <button class="filter-button" onclick="filterProducts('todos')">Todos</button>
+                <button class="filter-button" onclick="filterProducts('cabelo')">Cabelo</button>
+                <button class="filter-button" onclick="filterProducts('barba')">Barba</button>
+                <button class="filter-button" onclick="filterProducts('kit')">Kits</button>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <!-- Produtos serão inseridos aqui via JavaScript -->
+        </div>
+    </main>
+
+    <div id="cart-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="toggleCart()">×</span>
+            <h2>Carrinho</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+        </div>
+    </div>
+<script src="JS/scriptProduto.js"></script>
+</body>
+</html>

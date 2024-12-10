@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['usuario_nome'] = $usuario['nome'];
             
             // Redirecionar para página inicial
-            header("Location: agenda.html");
+            header("Location: produtoBarbearia.html");
             exit();
         } else {
             $erro = "Senha incorreta";

@@ -74,7 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 
         echo json_encode(['success' => true, 'message' => 'Cadastro realizado com sucesso!']);
-        header("location:telaLogin.php");
+        header("location:telaLoginCliente.php");
         
        
 
